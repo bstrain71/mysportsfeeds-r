@@ -387,7 +387,7 @@ msf_get_results <- function(version="1.2",
       message(paste("URL Used:", resp[1]))
       message(paste("Response Code Returned:", resp[2]))
       message("Type ?msf_get_results in the console for more info on response codes.")
-      return(NA)
+      return(api_response)
     }
   )
 
