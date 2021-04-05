@@ -8,6 +8,7 @@
 #' @param feed character. The name of the requested feed.  (e.g. - "player_gamelogs")
 #' @param params list. A list that defines additional parameters. Default is empty list.
 #' @param verbose logical. For debugging, prints status messages to the console, which can be helpful for walking through results. Default is TRUE.
+#' @param rawJSON logical. Return the response as rawJSON (TRUE) or parsed.
 #'
 #' @return a list.
 #' @return Response Codes:
