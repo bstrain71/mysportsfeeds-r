@@ -387,7 +387,6 @@ msf_get_results <- function(version="1.2",
     },
     # ... but if an error occurs, tell me what happened:
     error=function(error_message) {
-      message("Something went wrong...")
       message(paste("URL Used:", resp[1]))
       message(paste("Response Code Returned:", resp[2]))
       message("Type ?msf_get_results in the console for more info on response codes.")
