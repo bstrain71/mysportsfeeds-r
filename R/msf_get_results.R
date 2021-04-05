@@ -39,7 +39,8 @@ msf_get_results <- function(version="1.2",
                             season,
                             feed,
                             params = list(),
-                            verbose = FALSE) {
+                            verbose = FALSE,
+                            rawJSON = FALSE) {
 
   ## if verbose = TRUE, print status messages
   if (verbose) {
@@ -379,7 +380,9 @@ msf_get_results <- function(version="1.2",
     {
       #y = x * 2
       #return(y)
+      if(rawJSON == TRUE){
       api_response <- jsonlite::fromJSON(api_response, flatten=TRUE)
+      }
     },
     # ... but if an error occurs, tell me what happened:
     error=function(error_message) {
