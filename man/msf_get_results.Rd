@@ -10,8 +10,7 @@ msf_get_results(
   season,
   feed,
   params = list(),
-  verbose = FALSE,
-  rawJSON = FALSE
+  verbose = FALSE
 )
 }
 \arguments{
@@ -26,8 +25,6 @@ msf_get_results(
 \item{params}{list. A list that defines additional parameters. Default is empty list.}
 
 \item{verbose}{logical. For debugging, prints status messages to the console, which can be helpful for walking through results. Default is TRUE.}
-
-\item{rawJSON}{logical. Return the response as rawJSON (TRUE) or parsed.}
 }
 \value{
 a list.
